@@ -22,7 +22,7 @@ def load_library(path)
 def get_japanese_emoticon(path, emoticon)
   # code goes here
   file = load_library(path)
-   file
+   file["get_meaning"] = emoticon
 end
 
 def get_english_meaning
