@@ -22,7 +22,11 @@ def load_library(path)
 def get_japanese_emoticon(path, emoticon)
   # code goes here
   file = load_library(path)
-   file["get_meaning"] = emoticon
+   if file["get_emoticon"].keys.include?(emoticon)
+     return file["get_emoticon"][emoticon]
+   else
+     "Sorry not a known emoticon."
+   end
 end
 
 def get_english_meaning
