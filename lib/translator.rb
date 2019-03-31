@@ -38,4 +38,3 @@ def get_english_meaning(path, emoticon)
      "Sorry, not a known emoticon."
    end
 end
-end
